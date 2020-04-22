@@ -24,6 +24,8 @@ public class DragDropObjects : MonoBehaviour
     {
         IsHeld = false;
         GetComponent<Renderer>().material.color = new Color(0.9056604f, 0.5189343f, 0.2947668f, 1f);
+        //0.2274491f, 0.6509434f, 0.1443129f, 1f green
+        //0.9056604f, 0.5189343f, 0.2947668f, 1f
         Reticle = GameObject.Find("GvrReticlePointer (1)");
     }
 
@@ -47,7 +49,7 @@ public class DragDropObjects : MonoBehaviour
     public void HandleGazeTriggerEnd()
     {
         IsHeld = false;
-        GetComponent<Renderer>().material.color = new Color(0.9056604f, 0.5189343f, 0.2947668f, 1f);
+        GetComponent<Renderer>().material.color = new Color(0.2274491f, 0.6509434f, 0.1443129f, 1f);
 
     }
 
