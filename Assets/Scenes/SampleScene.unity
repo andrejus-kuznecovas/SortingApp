@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18297584, g: 0.22866525, b: 0.30681583, a: 1}
+  m_IndirectSpecularColor: {r: 0.450159, g: 0.5001996, b: 0.57542217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2352,6 +2352,7 @@ GameObject:
   - component: {fileID: 474936107}
   - component: {fileID: 474936106}
   - component: {fileID: 474936105}
+  - component: {fileID: 474936108}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2438,6 +2439,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &474936108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474936103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c6225d64e7050b45ba1e4caf75ea0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &484923300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8015,8 +8028,8 @@ GameObject:
   - component: {fileID: 1580407074}
   - component: {fileID: 1580407073}
   - component: {fileID: 1580407072}
-  - component: {fileID: 1580407077}
   - component: {fileID: 1580407076}
+  - component: {fileID: 1580407077}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -8113,34 +8126,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 2
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1580407077}
-          m_MethodName: HandleGazeTriggerStart
-          m_Mode: 1
+          m_MethodName: ChangeScene
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1580407077}
-          m_MethodName: HandleGazeTriggerEnd
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: IntroScene
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1580407077
@@ -8152,7 +8150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1580407071}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38d084854ed4e543ab284253380baac, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c6225d64e7050b45ba1e4caf75ea0a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1610402682
