@@ -23,7 +23,7 @@ public class DragDropObjects : MonoBehaviour
     void Start()
     {
         IsHeld = false;
-        GetComponent<Renderer>().material.color = new Color(0.764151f, 0.08950541f, 0.08290318f, 1f);
+        GetComponent<Renderer>().material.color = new Color(0.9056604f, 0.5189343f, 0.2947668f, 1f);
         //0.2274491f, 0.6509434f, 0.1443129f, 1f green
         //0.9056604f, 0.5189343f, 0.2947668f, 1f orange
         //0.764151f, 0.08950541f, 0.08290318f, 1f red
@@ -50,7 +50,7 @@ public class DragDropObjects : MonoBehaviour
     public void HandleGazeTriggerEnd()
     {
         IsHeld = false;
-        GetComponent<Renderer>().material.color = new Color(0.2274491f, 0.6509434f, 0.1443129f, 1f);
+        GetComponent<Renderer>().material.color = new Color(0.9056604f, 0.5189343f, 0.2947668f, 1f);
 
     }
 

@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MyScenes/WarningIntroScene.unity
+    guid: d0cb5a86189977145987606ef0c5c7e3
+  - enabled: 1
     path: Assets/MyScenes/IntroScene.unity
     guid: 5be46612693abf14398914b970c861bb
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/SelectionSortScene.unity
+    guid: eff1f412e1c666c409582c2af3a0d37c
+  - enabled: 1
+    path: Assets/TextMesh Pro/Resources/Fonts & Materials/InsertionSortScene.unity
+    guid: 27b6979c544c53248b7999d48d41c2dc
+  - enabled: 1
+    path: Assets/MyScenes/LevelMenuScene.unity
+    guid: 5afa43042e0d85647a807fa08b89d799
   m_configObjects: {}
