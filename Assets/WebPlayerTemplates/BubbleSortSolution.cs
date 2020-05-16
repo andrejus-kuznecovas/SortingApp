@@ -1,0 +1,112 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BubbleSortScript : MonoBehaviour
+{
+
+    private float updateCount = 0;
+    private float fixedUpdateCount = 0;
+    private float updateUpdateCountPerSecond;
+    private float updateFixedUpdateCountPerSecond;
+    private List<int[]> listOfSortingArrays = new List<int[]>();
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        int[] arr = {23, 16, 4, 15, 8, 42};
+        bubbleSort(arr);
+        saveArray(arr);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (CubesOnGround)
+        {
+            CheckIfPositionCorrect(listOfSortingArrays);
+        }
+    }
+
+    static void bubbleSort(int[] arr)
+    {
+        int n = arr.Length;
+        for (int i = 0; i < n - 1; i++)
+        {
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+
+                saveArray(arr);
+            }
+        }
+    }
+
+
+    static List<int[]> saveArray(int[] arr)
+    {
+       return this.listOfSortingArrays.Add(arr);
+    }
+
+
+    void Awake()
+    {
+        //Application.targetFrameRate = 10;
+        StartCoroutine(Loop());
+    }
+
+    // Increase the number of calls to Update.
+    void UpdateCall()
+    {
+        updateCount += 1;
+    }
+
+    // Increase the number of calls to FixedUpdate.
+    void FixedUpdate()
+    {
+        fixedUpdateCount += 1;
+    }
+
+    bool CubesOnGround()
+    {
+        GUIStyle fontSize = new GUIStyle(GUI.skin.GetStyle("label"));
+        fontSize.fontSize = 24;
+        GUI.Label(new Rect(100, 100, 200, 50), "Update: " + updateUpdateCountPerSecond.ToString(), fontSize);
+        if (GUI.Label(new Rect(100, 150, 200, 50), "FixedUpdate: " + updateFixedUpdateCountPerSecond.ToString(),
+                fontSize) == null)
+        {
+            return false;}
+        else
+        {
+            return true;
+        }
+        
+    }
+
+    // Update both CountsPerSecond values every second.
+    IEnumerator Loop()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            updateUpdateCountPerSecond = updateCount;
+            updateFixedUpdateCountPerSecond = fixedUpdateCount;
+
+            updateCount = 0;
+            fixedUpdateCount = 0;
+        }
+    }
+    bool CheckIfPositionCorrect(List<int[]> sortingArrayOfPlayer)
+    {
+        foreach (ContactPoint contact in collisionInfo.contacts)
+        {
+            Debug.DrawRay(contact.point, contact.normal, Color.white);
+        }
+    }
+}
+
