@@ -9,7 +9,7 @@ Peržiūros patogumui, kad nereikėtų instaliuoti aplikacijų į privačius tel
 
 ### Sistemos įdiegimas Android telefone:
 1 Būdas: 
-- Parsisiųsti šį .apk formato failą, kuriame yra supakuota aplikacija:
+- Parsisiųsti šį .apk formato failą, kuriame yra supakuota aplikacija: https://we.tl/t-b8W5I0Lt1Z
 - Perkelti jį į telefoną (Pvz. su USB laido pagalba).
 - Rasti šį .apk failą telefone ir jį instaliuoti.
 - Parsisiųsti Google Cardboard aplikaciją iš [Play Store](https://play.google.com/store/apps/details?id=com.google.samples.apps.cardboarddemo&hl=lt) (nebūtinai, bet patartina).
