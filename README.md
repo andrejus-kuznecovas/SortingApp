@@ -3,9 +3,9 @@
 ### Sukurta : Andrej Kuznecov 2020
 ### Bakalaurinio darbo projektas Vilniaus Universiteto Programų Sistemų kursui. 
 
-Peržiūros patogumui, kad nereikėtų instaliuoti aplikacijų į privačius telefonus, pateikiu [nuorodą į demonstracinį filmuką](https://www.youtube.com/watch?v=bwiKanbV3K0&feature=youtu.be) (galima pauspausti nuotrauką):
+Peržiūros patogumui, kad nereikėtų instaliuoti aplikacijų į privačius telefonus, pateikiu [nuorodą į demonstracinį filmuką](https://www.youtube.com/watch?v=W7D_0Wxf4cY&feature=youtu.be) (galima pauspausti nuotrauką):
 
-[![Rikiavimo algoritmų VR sistemos demonstracija](https://img.youtube.com/vi/bwiKanbV3K0/0.jpg)](https://www.youtube.com/watch?v=bwiKanbV3K0&feature=youtu.be)
+[![Rikiavimo algoritmų VR sistemos demonstracija](https://img.youtube.com/vi/W7D_0Wxf4cY/0.jpg)](https://www.youtube.com/watch?v=W7D_0Wxf4cY&feature=youtu.be)
 
 ### Sistemos įdiegimas Android telefone:
 1 Būdas: 
